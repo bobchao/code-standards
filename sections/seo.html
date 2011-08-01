@@ -5,18 +5,18 @@
 	<div class="intro has-icon">
 		<img class="icon" src="img/layout/icon-curly.png" alt="{}" />
 		
-		<h1>Search Engine Optimization</h1>		
+		<h1>搜尋引擎優化</h1>		
 		
 		<p>An essential part of good web design and development is SEO. Well-structured code is the key to ensuring that a web page not only gets properly indexed by search engines, but made accessible to those with limited web capabilities as well.</p>
 	</div>
 
-	<h4>Be aware of SEO best practices</h4>
+	<h4>認識 SEO 最佳實務</h4>
 
 	<ul>
-		<li><a href="http://24ways.org/2007/back-to-the-future-of-print">Print CSS best practices</a>.</li>
-		<li>Site/app will fit according to <a href="#_browser_resolution">Browser Resolution guidelines</a>.</li>
-		<li>Site/app will be compatible with browser requirements described in <a href="#_browser_testing_and_support">Browser Testing and Support</a>.</li>
-		<li>Be aware of Accessibility best practices, such as the 508 and WCAG standards: 
+		<li><a href="http://24ways.org/2007/back-to-the-future-of-print">列印用 CSS 的最佳實務</a></li>
+        <li>網站與程式應遵守<a href="#_browser_resolution">瀏覽器解析度準則</a>。</li>
+		<li>網站與程式應遵守<a href="#_browser_testing_and_support">瀏覽器支援與測試</a>中提到的相容需求。</li>
+		<li>多了解網頁無障礙的最佳實務，例如 Section 508 及 WCAG 標準：
 			<ul>
 				<li><a href="http://www.section508.gov">http://www.section508.gov</a></li>
 				<li><a href="http://www.w3.org/TR/WCAG20/">http://www.w3.org/TR/WCAG20/</a>.</li>
@@ -25,26 +25,26 @@
 	</ul>
 	
 
-	<h4>Indexability</h4>
+	<h4>可索引</h4>
 
-	<p>We must use semantic markup that's readable and logical when JavaScript and CSS are off. All page content must be in HTML; we don't want to use iframes or JavaScript for loading initial indexable content.</p>
+	<p>我們必須使用在 JavaScript 及 CSS 關閉的情形下，可讀、符合邏輯的語意標籤撰寫網頁。所有網頁的內容都必須放進 HTML 中，不以 iframe 或 JavaScript 來讀入可供索引的內容。</p>
 	
-	<figure class="preCode">All links should be to HTML destinations.</figure>
+	<figure class="preCode">所有連結的目的都是 HTML 檔，例如以</figure>
 	<textarea class="brush:html">
 		<a href="/shelf/jordan/page/2">
 	</textarea> 
 	
-	<figure class="preCode">Instead of</figure>
+	<figure class="preCode">替代</figure>
 	<textarea class="brush:html">
 		<a href="javascript:loadPage(2);">
 	</textarea>
 
-	<p>This lets the page get indexed correctly by search engines as well as allows users to open in new tabs and windows.</p>
+	<p>這可以讓網頁順利被搜尋引擎列入索引，也方便使用者將連結開啟於新分頁或新視窗中。</p>
 	
 	
-	<h4>Optimization</h4>
+	<h4>優化</h4>
 	
-	<p>The title tag should feature target keywords for the unique page. The titles should be unique to each page. Headings (h1,h2,etc) should form an outline of the document and represent the most important keywords for that page. URLs should be human-readable with primary target keywords present in them:</p>
+	<p>title 標籤中應包括該頁面的關鍵字，每頁的標題都不同。內文標題（h1、h2 等等）應為文件的綱要、並含有該頁最重要的關鍵字。網址應可易讀達意，包含該頁的關鍵字：</p>
 
 	
 	<pre>http://domain.com/mens-shoes/basketball/jordan/jordan-mens-ajf-6-basketball-shoe/</pre>	
@@ -52,11 +52,11 @@
 	<pre>http:// domain.com/ecomm.cfm?view=prod&prodId=23425</pre>
 	
 	
-	<h4>Flash and Image Replacement</h4>
+	<h4>Flash 及圖片的替代資訊</h4>
 
-	<p>Always use backup HTML content for flash. All promo images should use CSS-based image replacement instead of alt tags.</p>
+	<p>一定要為 Flash 準備 HTML 替代內容，所有主視覺圖片都要用 CSS 背景嵌入，而非採用 alt 加註說明。舉例來說：</p>
 
-	<figure class="preCode">>Fallback non-flash version:</figure>
+	<figure class="preCode">>替代為非 Flash 內容：</figure>
 	<textarea class="brush:html">
 		<a href="/nike/morethanagame/" id="morethan">
 		  <h4>Nike: More Than A Game</h4>
@@ -70,11 +70,11 @@
 					 text-indent: -999px; overflow:hidden; display:block; }
 	</textarea>
 	
-	<h3>Google's SEO Report Card</h3>
+	<h3>Google 的 SEO 報告</h3>
 
-	<p><a href="http://googlewebmastercentral.blogspot.com/2010/03/googles-seo-report-card.html">Google's SEO Report Card</a> is an effort to provide Google's product teams with ideas. on how they can improve their products' pages using simple and accepted optimizations. These optimizations are intended to not only help search engines understand the content of their pages better, but also to improve their our users' experience.</p>
+	<p><a href="http://googlewebmastercentral.blogspot.com/2010/03/googles-seo-report-card.html">Google 的 SEO 報告</a>是提供 Google 產品開發團隊參考、以便用簡單容易採納的優化步驟改進產品網頁的文件。些優化方式不只能協助搜尋引擎更瞭解網頁內容，還可以提升訪客的使用體驗。</p>
 
-	<p>when visiting their sites. Simple steps such as fixing 404s and broken links, simplifying URL choice, and providing easier-to-understand titles and snippets for their pages can benefit both users and search engines.</p>
+	<p>所謂的簡單步驟包括修復 404 網頁及錯誤連結、簡化網址規劃、提供易於瞭解的標題與說明等，對訪客及搜尋引擎都有好處。</p>
 
 
 </section>

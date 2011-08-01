@@ -5,30 +5,30 @@
 	<div class="intro has-icon">
 		<img class="icon" src="img/layout/icon-curly.png" alt="{}" />
 		
-		<h1>Browser Testing and Support</h1>
+		<h1>瀏覽器測試與支援</h1>
 		
 		<p>Today's audience can choose from quite a large pool of web browsers, each providing a slightly (or dramatically) different experience. As developers, it is our responsibility to choose just how the web pages we build are displayed to those users. This section describes how we, at Isobar, make some of these key decisions.</p>
 	</div>
 	
 
-	<h3>What we support</h3>
+	<h3>我們支援的瀏覽器</h3>
 
 	<figure>
 		<img src="img/browsers1.jpg" alt="Browsers" />
 	</figure>
 	
-	<p><strong>Isobar supports any browser with an A-Grade in <a href="http://developer.yahoo.com/yui/articles/gbs/">Yahoo's Graded Browser Support</a>, with the exception of Opera. There may be exceptions to this, given regional markets and their particular metrics</strong>.</p>
+	<p><strong>Isobar 支援 <a href="http://developer.yahoo.com/yui/articles/gbs/">Yahoo 瀏覽器支援權重</a>表中的所有 A 級瀏覽器（Opera 除外）。 此端視各區市場狀況不同，可能還有例外。</strong></p>
 
-	<p>We will strive to support any other mission critical browsers mandated by the client (IE 5.5, Opera, Konqueror, Safari 3 on PC, etc), though we cannot guarantee all functionality is possible.</p>
+	<p>我們會努力支援任何其他客戶特別要求的瀏覽器（IE 5.5、Opera、Konqueror、Safari 3 PC 版等等），但無法保證所有功能都能在這些瀏覽器上都能實現。</p>
 	
 	
-	<h3>How we test</h3>
+	<h3>我們的測試方法</h3>
 	
 	<p>Comprehensive browser testing is a must on every Isobar web project. Considerable effort must be made to test across browsers and platforms to ensure a quality and consistent user experience. Setting up a testing environment can be a challenge but can be well worth it.</p>
 
-	<h4>On Microsoft Windows</h4>
+	<h4>Microsoft Windows 平台</h4>
 	
-	<h5 id="vhds">IE Testing</h5>
+	<h5 id="vhds">測試 IE</h5>
 	
 	<p>Since it's impossible to have more than a single copy of Microsoft Internet Explorer installed on a PC, testing for IE is a challenge. Fortunately, Microsoft has finally made available development versions of older Internet Explorer's available for downloading. These Virtual Hard Drives (VHD's) run stripped down versions of Microsoft Windows that expire (time out) over time. Setting them up again after a few months is typically required. Development copies of Microsoft Windows from your MSDN license (if available) may also be an option depending on what you have access to.</p>
 
@@ -41,25 +41,25 @@
 	
 	<h5>Firefox</h5>
 	<ul>
-		<li><a href="http://www.mozilla.com/en-US/firefox/all-older.html">Firefox 3.6+</a> should be installed natively as well - with version 3.0 available through a <a href="http://portableapps.com/">portable apps</a> version. </li>
-		<li>If you're up to it, <a href="https://wiki.molecular.com/wiki/Install_Firefox_3">Install Firefox 3, 3.5, and/or 3.6 side-by-side with FF4</a>. The Firefox Profile Manager allows you to install to different directories and <a href="http://lifehacker.com/5481213/master-multiple-firefox-profiles-for-more-productive-browsing">maintain different profiles for each</a>.</li>
+		<li>在電腦上安裝 <a href="http://www.mozilla.com/en-US/firefox/all-older.html">Firefox 3.5+</a>，並以<a href="http://portableapps.com/">可攜版</a>測試 Firefox 3。</li>
+		<li>如果你有需要，也可以<a href="https://wiki.molecular.com/wiki/Install_Firefox_3">同時安裝 Firefox 3、3.5、3.6 以及 Firefox 4</a>。The Firefox Profile Manager allows you to install to different directories and <a href="http://lifehacker.com/5481213/master-multiple-firefox-profiles-for-more-productive-browsing">maintain different profiles for each</a>.</li>
 	</ul>
 
 	<h5>Safari for the PC</h5>
 	<ul>
-		<li>Use <a href="http://www.apple.com/safari/">the newest release of Safari for the PC</a>. It is 98% consistent with Safari on OS X, but not completely, so test there if its a required platform.</li>
+		<li>使用<a href="http://www.apple.com/safari/">最新的 PC 版 Safari</a>。PC 版與 OS X 版 98% 相同，但不完全一樣，所以有必要的話還需增加測試平台。</li>
 	</ul>
 
 	<h5>Opera</h5>
 	<ul>
-		<li>You can download <a href="http://arc.opera.com/pub/opera/win/">old versions from their archive</a>. Install in different folders to run multiple versions</li>
+		<li>可以從 <a href="http://arc.opera.com/pub/opera/win/">Opera 的程式封存區下載舊版</a>，只要裝在不同目錄就可以安裝多個版本。</li>
 	</ul>
 
-	<h5>Google Chrome and Chrome Versions</h5>
+	<h5>Google Chrome 及其版本</h5>
 	
-	<p>Google Chrome updates itself and as luck would have it, most all users have the most recent version more often than not. If only every browser were this easy. No worries about old browsers based on Google Chrome.</p>
+	<p>Google Chrome 會自動更新，所以大部分的使用者都會有最新版本，如果所有瀏覽器都把事情弄得這麼簡單就好了。不必擔心 Google Chrome 的舊版問題。</p>
 
-	<h4>On Mac OS X</h4>
+	<h4>Mac OS X</h4>
 
 	<p>For the core Mac OS X browsers, Mozilla Firefox, Google Chrome and Apple Safari offer virtually identical browser experiences to their Windows counterparts. That said, some OS level differences can be present and web sites should be tested on both platforms. Typical differences are around font rendering and thus spacing issues sometimes arise.</p>
 	
@@ -86,20 +86,20 @@
 
 	<p>It has been noticed that IE 7 using the Vista platform does have differences from IE 7 on Windows XP, therefore, you might want to make sure that someone on your team has this configuration as well. <a href="http://www.my-debugbar.com/wiki/IETester/HomePage">IETester</a> is known to fix a number of these issues, as do the Xenocode browsers.</p>
 
-	<h2>Browser Resolution</h2>
+	<h2>瀏覽器解析度</h2>
 		<p>Along with catering to browsers, developers must stay conscious of the screen resolutions of their audience. As monitor screens get larger, the breadth of resolutions grows as well. Below are some guidelines to help you in working with resolutions.</p>
 	
-	<p><strong>1024px resolution</strong></p>
+	<p><strong>解析度為 1024px 時</strong></p>
 	
 	<ul>
-		<li>Fold estimated at 570px.</li>
-		<li>Optimal width: 960px - Has comfortable padding on both sides, is divisible by many numbers, and also plays well with <a href="http://www.iab.net/iab_products_and_industry_services/1421/1443/1452">IAB ad standard widths</a></li>
-		<li>Larger width: 970px - Still has some padding on both sides in most browsers. The math plays well with the <a href="http://en.wikipedia.org/wiki/Golden_ratio">Golden Ratio</a></li>
-		<li>Maximum width: 996px - Without incurring any horizontal scrollbars in the major browsers. <a href="http://www.nealgrosskopf.com/tech/thread.php?pid=43">Based on the research here</a> the maximum is 1003 px wide if you don't want a horizontal scrollbar.</li>
+		<li>高度預估為 570px.</li>
+		<li>一般寬度：960px - 兩側都有舒服的邊界留白，可以切成好幾塊，此外也符合<a href="http://www.iab.net/iab_products_and_industry_services/1421/1443/1452">IAB 廣告標準寬度</a></li>
+		<li>大一些的寬度：970px - 在大多數的瀏覽器下仍保有留白，符合<a href="http://en.wikipedia.org/wiki/Golden_ratio">黃金比例</a></li>
+		<li>最大寬度：996px - 在主流瀏覽器中不致出現水平捲軸。<a href="http://www.nealgrosskopf.com/tech/thread.php?pid=43">依據這份研究</a>，如果不想出現水平捲軸，最大寬度為 1003px。</li>
 	</ul>
 	
 	
-	<p><strong>Current stats on window sizes</strong></p>
+	<p><strong>當前關於螢幕解析度的狀況</strong></p>
 	
 	<ul>
 		<li><a href="http://www.cameronmoll.com/archives/001220.html">Authentic Boredom - Optimal width for 1024px resolution?</a></li>
@@ -107,7 +107,7 @@
 	</ul>
 	
 	
-	<p><strong>System resolution is not, however, the same as browser size</strong></p>
+	<p><strong>系統解析度跟瀏覽器尺寸是不同的</strong></p>
 	
 	<ul>
 		<li><a href="http://mentalized.net/journal/2006/10/24/browser_size_does_matter_actual_numbers/">Browser size does matter - Actual numbers | mentalized</a></li>
