@@ -1,5 +1,5 @@
 <?php
-$page_title = "Front-end Code Standards &amp; Best Practices";
+$page_title = "前端開發程式碼標準 &amp; 最佳實務";
 $page_keywords = "Isobar code standards, coding standards, frontend development, frontend best practices, html code standards, html5 code standards, css code standards, best code practices, development, frontend development";
 $page_description = "Isobar North America's Coding Standards and Frontend development Best Practices";
 $protocol = (strstr('https',$_SERVER['SERVER_PROTOCOL']) === false)?'http':'https'; 
@@ -8,27 +8,28 @@ include_once('layout/header.php');
 ?>
 
 	<body>
-		<a class="fork" href="https://github.com/isobar-idev/code-standards/" target="_blank"></a>
+		<a class="fork" href="https://github.com/bobchao/code-standards" target="_blank"></a>
 		<div id="container">
 		
 			<header role="banner">
-				<h1><a id="logo" href="<?php echo $page_root; ?>">Isobar North America</a></h1>
+				<h1><a id="logo" href="<?php echo $page_root; ?>">Isobar</a></h1>
 				
 				<canvas id="canvas-logo" width="500" height="300">
-					<strong>Your browser cannot handle the awesomeness of this!</strong>
+					<strong>您使用的瀏覽器沒辦法顯示這些很酷的玩意！</strong>
 				</canvas>
 
                 <ul id="social">
 					<li><a class="icon" href="http://www.shareaholic.com/api/share/?v=1&apitype=1&apikey=8943b7fd64cd8b1770ff5affa9a9437b&service=5&title=Isobar%20North%20America's%20Coding%20Standards%20and%20Frontend%20development%20Best%20Practices&link=http://na.isobar.com/standards/&source=Shareaholic" id="facebook"></a></li>
 					<li><a class="icon" href="http://www.shareaholic.com/api/share/?v=1&apitype=1&apikey=8943b7fd64cd8b1770ff5affa9a9437b&service=7&title=Isobar%20North%20America's%20Coding%20Standards%20and%20Frontend%20development%20Best%20Practices&link=http://na.isobar.com/standards/&source=Shareaholic" id="twitter"></a></li>
 					<li><a class="icon" href="http://www.shareaholic.com/api/share/?v=1&apitype=1&apikey=8943b7fd64cd8b1770ff5affa9a9437b&service=2&title=Isobar%20North%20America's%20Coding%20Standards%20and%20Frontend%20development%20Best%20Practices&link=http://na.isobar.com/standards/&source=Shareaholic" id="delicious"></a></li>
-					<li><a href="http://na.isobar.com" id="linkback">Return to Isobar NA</a></li>
+					<li><a href="http://na.isobar.com">回到 Isobar NA</a></li>
+					<li><a href="http://www.isobar.com.tw" id="linkback">回到知世.安索帕</a></li>
 				</ul>
 			</header>
 
 			
 			<div id="main" role="document">
-				<h1>Front-end Code Standards &amp; Best Practices</h1>
+				<h1>前端開發程式碼標準 &amp; 最佳實務</h1>
 			
 				<?php
 				include_once('sections/general.html');
@@ -46,17 +47,17 @@ include_once('layout/header.php');
 			</div><!--! End of #main section !-->
 			
 			<nav id="side" class="nav-right" role="navigation">
-				<h3 class="toc-title">Table of Contents</h3>
+				<h3 class="toc-title">目錄</h3>
 				<ul id="toc" style="display:none"></ul>
-				<noscript><p><a href="http://enable-javascript.com">Please enable JavaScript</a>.</p></noscript>
+				<noscript><p><a href="http://enable-javascript.com">請啟用 JavaScript</a>.</p></noscript>
 			</nav>
 			
 		</div><!--! end of #container !-->
 
 		<footer role="contentinfo">
 			<p>
-				<span class="float_left"><?php print date("Y"); ?> Isobar North America, Inc. All rights reserved.</span>
-				<span class="float_right">All content licensed under Creative Commons Attribution 3.0 Unported License</span>
+				<span class="float_left">原作：<?php print date("Y"); ?> Isobar North America, Inc. All rights reserved.</span>
+				<span class="float_right">本文以<a href="http://creativecommons.org/licenses/by/3.0/">創用 CC 姓名標示 3.0 版條款</a>授權大眾使用</span>
 			</p>
 		</footer>
 

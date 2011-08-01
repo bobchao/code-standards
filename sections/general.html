@@ -1,40 +1,40 @@
 <!-- #### GENERAL SECTION #### -->
 
 
-<h2>Overview</h2>
+<h2>概覽</h2>
 
-<p>This document contains guidelines for web applications built by the Creative Technology (front end engineering) practice of Isobar North America (previously Molecular). It is to be readily available to anyone who wishes to check the iterative progress of our best practices. If you have any feedback, please leave a comment on the <a href="http://na.isobar.com/2010/our-front-end-development-best-practices/#comments">announcement blog post</a>.</p>
+<p>本文件描述北美 Isobar （前 Molecular）針對前端開發實務上所建立的 Web 應用程式規範指南。這份指南是為了讓任何想快速了解我們實務經驗中各項進化的人所寫，如果您有任何想法、歡迎到<a href="http://na.isobar.com/2010/our-front-end-development-best-practices/#comments">發表這份文件的網誌文章</a>留下回應。針對翻譯的問題回報，請聯絡知世安索帕經驗設計中心（台北）<a href="mailto:bob.chao@isobar.com?Subject=[codingguide]">趙柏強</a>。</p>
 
-<p>This document's primary motivation is two- fold: <tt>1)</tt> code consistency and <tt>2)</tt> best practices. By maintaining consistency in coding styles and conventions, we can ease the burden of legacy code maintenance, and mitigate risk of breakage in the future. By adhering to best practices, we ensure optimized page loading, performance and maintainable code.</p>
+<p>撰寫這份文件的主要動機有二：<tt>1)</tt> 保持程式碼一致性，以及 <tt>2)</tt> 列出最佳實務。藉由維持程式碼在撰寫樣式及公約上的一致性，我們可以減輕維護舊程式的負擔，且減少當前程式對於未來開發不利的情形；而依循最佳實務，我們可以確保網頁載入、效能等最佳化，程式碼也易於維護。</p>
 
 
 <section id="general">
 
 	<div class="intro has-icon">
 		<img class="icon" src="img/layout/icon-curly.png" alt="{}" />
-		<h1>General Guidelines</h1>
+		<h1>一般準則</h1>
 	</div>
 	
-	<h2>Pillars of Front-end Development</h2>
+	<h2>前端開發的支柱</h2>
 	
 	<ol>
-		<li>Separation of presentation, content, and behavior.</li>
-		<li><a href="http://www.bbc.co.uk/guidelines/futuremedia/technical/semantic_markup.shtml">Markup should be well-formed, semantically correct</a> and <a href="#validation">generally valid</a>.</li>
-		<li><a href="http://icant.co.uk/articles/pragmatic-progressive-enhancement/">Javascript should progressively enhance the experience</a>.</li>
+		<li>分離展示、內容、互動行為。</li>
+		<li><a href="http://www.bbc.co.uk/guidelines/futuremedia/technical/semantic_markup.shtml">標籤應符合格式、語意正確地標示</a>，大致上也應<a href="#validation">通過驗證</a>。 </li>
+		<li><a href="http://icant.co.uk/articles/pragmatic-progressive-enhancement/">Javascript 應用以逐步增進使用經驗</a>。</li>
 	</ol>
 	
 	
-	<h2>General Practices</h2>
+	<h2>一般實務</h2>
 	
-	<h3>Indentation</h3>
+	<h3>縮排</h3>
 	
-	<p>For all code languages, we require indentation to be done via soft tabs (using the space character). Hitting <em>Tab</em> in your text editor shall be equivalent to <b>four spaces</b>.</p>
+	<p>無論寫什麼程式語言，我們都要求以 soft tab（以空白字元代替 tab 字元）的方式來縮排。在你的編輯器上，按下 <em>Tab</em> 鍵應等同於 4 個<b>空白字元</b>。</p>
 	
 	
-	<h3>Readability vs Compression</h3>
+	<h3>易讀與壓縮</h3>
 	
-	<p>We prefer readability over file-size savings when it comes to maintaining existing files. Plenty of whitespace is encouraged, along with ASCII art, where appropriate. There is no need for any developer to purposefully compress HTML or CSS, nor obfuscate JavaScript.</p>
+	<p>當維護現存檔案時，相較於節省檔案大小、我們更重示程式碼易讀性。我們鼓勵使用空白字元、甚至在適當時機用點 ASCII Art。開發者不必刻意壓縮 HTML 或 CSS，也不需為 JavaScript 編碼。</p>
 	
-	<p>We will use server-side or build processes to automatically minify and gzip all static client-side files, such as CSS and JavaScript.</p>
+	<p>我們會以伺服端技術，自動壓縮、gzip 所有 CSS 及 JavaScript 等靜態檔案。</p>
 
 </section>

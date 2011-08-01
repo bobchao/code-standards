@@ -1,22 +1,22 @@
 <!doctype html>
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
-<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
-<!--[if IE 10]>    <html class="no-js ie10" lang="en"> <![endif]-->
-<!--[if gt IE 10]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!--[if lt IE 7]> <html class="no-js ie ie6" lang="zh-TW"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie ie7" lang="zh-TW"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" lang="zh-TW"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9" lang="zh-TW"> <![endif]-->
+<!--[if IE 10]>    <html class="no-js ie10" lang="zh-TW"> <![endif]-->
+<!--[if gt IE 10]><!--><html class="no-js" lang="zh-TW"><!--<![endif]-->
     <head><meta charset="utf-8">
 
 
 
-<!--
+<!--  
                 _^_
-               / _)
-        .-^^^-/ /          we like dinosaurs as much as you do.
-    __/       /
-    <__.|_|-|_|
-
+               / _)         
+        .-^^^-/ /          我們跟你一樣喜歡恐龍
+    __/       /            we like dinosaurs as much as you do.
+    <__.|_|-|_|             
+    
     -->
 
 
@@ -24,9 +24,10 @@
         Remove this if you use the .htaccess -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-		<title><?php echo $page_title; ?> | Isobar North America</title>
+		<title><?php echo $page_title; ?> | Isobar</title>
         <meta name="description" content="<?php echo $page_description; ?>">
         <meta name="author" content="Isobar North America">
+        <meta name="translator" content="wwwinsIsobar (Taipei)">
         
         <!-- Mobile viewport optimized: j.mp/bplateviewport -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
