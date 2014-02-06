@@ -38,10 +38,9 @@
 		<li>Follow the <a href="http://developer.yahoo.com/performance/">Yahoo Performance Guidelines</a></li>
 		<li>Smush images using <a href="http://developer.yahoo.com/yslow/smushit/">smush.it</a>. Also using <a href="http://developer.yahoo.com/yslow/">YSlow</a> can autosmush all your images for you.</li>
 		
+		<li>Avoid inline <code>&lt;script></code> blocks within the HTML. They block rendering and are quite devastating to page load time.</li>
 		<li>Set caching headers appropriately.</li>
 		<li>Consider a cookie-less subdomain for static assets</li>
-		<li>Avoid inline &lt;script&gt; blocks.</li>
-		
 		<li>CSS should be located in the <code>&lt;head></code> of the document, Javascript should be right before the <code>&lt;/body></code> tag.</li>
 		<li>Both CSS and JavaScript should be served minified. Most people use the <a href="http://developer.yahoo.com/yui/compressor/">YUI Compressor</a> for this.</li>
 	
@@ -51,7 +50,6 @@
 		<li>JavaScript should be concatenated. While a ajax script dependency manager would be ideal (similar to the YUI 3 Loader), it's rather complicated to implement. In its place I'd recommend a singular download of most of the script used on the site. (Of course, proper caching should be used to retain the file as long as is reasonable).</li>
 	
 		<li>Concatenation and minification typically occur during an automated build process, when packaging the code for deployment on stage or production. Many use tools like <a href="http://ant.apache.org/">Ant</a> or <a href="http://maven.apache.org/">Maven</a> for this.</li>
-		<li>Avoid inline <code>&lt;script></code> blocks within the HTML. They block rendering and are quite devastating to page load time.</li>
 	</ul>
 	
 	
@@ -83,11 +81,11 @@
 	a.expandbox:hover { background-position: -50px -20px; }
 	</textarea>
 	
-	<p>Using sprites reduces total page weight and reduces HTTP connections which speeds up page load. <a href="http://css-tricks.com/css-sprites/">More on the general technique and overview at css-tricks.com</a></p>
+	<p>Using sprites reduces total page weight and reduces HTTP connections which speeds up page load. <a href="http://css-tricks.com/css-sprites/">More on the general technique and overview at css-tricks.com</a>.  It is just an overall best practice to make use of CSS sprite images whenever you can.</p>
 	
-	<p>Many developers use a vertically-oriented sprite in addition to the primary sprite. This vertical sprite will be <=100px wide (and tall) and contain icons that are typically placed next to text, such as list item bullets. Yahoo <a href="http://l.yimg.com/a/i/ww/sp/pa-icons3.gif ">uses a few such as this one</a>.</p>
+	<p>Many developers use a vertically-oriented sprite in addition to the primary sprite. This vertical sprite will be <strong>less than or equal to 100px wide</strong> (and tall) and contain icons that are typically placed next to text, such as list item bullets or call to action links and buttons. Yahoo uses a few <a href="http://l.yimg.com/a/i/ww/sp/pa-icons3.gif">such as this one</a>.</p>
 	
-	<p>The one consideration is to not make sprites too large, something over 1000px in either direction will end up using a sizeable amount of memory. <a href="http://blog.vlad1.com/2009/06/22/to-sprite-or-not-to-sprite/">More detail about sprites and memory usage here</a>.</p>
+	<p>The one consideration is to not make sprites too large, something over 1000px in either direction will end up using a sizeable amount of memory. Read more on <a href="http://blog.vlad1.com/2009/06/22/to-sprite-or-not-to-sprite/">when to use sprites and memory usage here</a>, and for more general tips and techniques on creating sprites check out the <a href="http://blog.mozilla.com/webdev/2009/03/27/css-spriting-tips/">Mozilla Dev Blog</a>.</p>
 
 	<p>Some general <a href="http://blog.mozilla.com/webdev/2009/03/27/css-spriting-tips/">tips and techniques</a> in sprite creation can be found on the <a href="http://blog.mozilla.com/webdev/2009/03/27/css-spriting-tips/">Mozilla Dev Blog</a>.</p>
 
@@ -102,7 +100,7 @@
 			<p>In many cases, you can use a GIF fallback for IE6, in place of a PNG24. This is especially true if any sprites need to be done in PNG24. All pngfixes are very slow and expensive, so it's best to avoid using them.</p>
 		</li>
 		<li><p><strong>PNG8.</strong> - A surprising diversity of color can be captured inside 256 colors, so it's worth trying PNG before heading JPG. PNG also is a lot more compressible than GIF (using tools like pngcrush and pngquant). This format allows graded opacity in nearly all browsers, but in IE6, those semi-opaque pixels are just shown 100% transparent. In many cases this is sufficient. It also does not require a pngfix script to be run, so it's optimized for speed.</p>
-			<p>Photoshop cannot output these semi-opaque files correctly but Fireworks can. More detail here: <a href="http://www.sitepoint.com/blogs/2007/09/18/png8-the-clear-winner/">http://www.sitepoint.com/blogs/2007/09/18/png8-the-clear-winner/</a></p>
+			<p>Photoshop cannot output these semi-opaque files correctly but Fireworks can. More detail here: <a href="http://www.sitepoint.com/png8-the-clear-winner/">http://www.sitepoint.com/png8-the-clear-winner/</a></p>
 		</li>
 		<li><p><strong>Transparent GIF 89a.</strong> - GIF 89a offers the flexibility of transparency and wide browser support, but the constraints of no graded opacity nor a color depth above 256. In our experience, color depths of 64 still provide very good quality thumbnails, and keep the file size comparably very small.</p>
 			<p>All low-color count imagery such as icons or thematic graphics should be done in PNG8, as it's the most size-efficient of these four. PNG8 is our primary recommendation for most site graphics.</p>

@@ -5,7 +5,7 @@ module.exports = function(grunt) {
 
   // @todo: move to json file
   var standards = {
-    ourLanguages : ['en', 'es'],
+    ourLanguages : ['en', 'es', 'zh-tw'],
     defaultFile : 'index',
     defaultExt : '.html',
     // change this to have the 'index' file be another language
@@ -76,6 +76,15 @@ module.exports = function(grunt) {
         },
         files : {
           'es.html' : ['sections/es/build/es.hbs']
+        }
+      },
+      zh-tw: {
+        options : {
+          data : 'sections/zh-tw/build/data.json',
+          partials: ['sections/zh-tw/*.html']
+        },
+        files : {
+          'es.html' : ['sections/zh-tw/build/zh-tw.hbs']
         }
       }
     },
